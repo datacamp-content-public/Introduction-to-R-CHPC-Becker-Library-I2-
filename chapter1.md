@@ -286,10 +286,13 @@ head(study_data, n = -8L)
 nrow(study_data)
 ncol(study_data)
 summary(study_data)
-
-
+class(study_data$ID)
+class(study_data$Height)
+class(study_data$Weight)
+class(study_data$BMI)
+class(study_data$Exercise)
+class(study_data$Diet)
 ```
-
 
 
 
