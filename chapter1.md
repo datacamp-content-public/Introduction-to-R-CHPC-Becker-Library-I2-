@@ -186,3 +186,43 @@ Matrix2
 
 
 
+
+---
+## Ex 1.3
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: fa22992604
+```
+
+This exercise will use R to explore tabular data in data frames. This includes getting 
+data into R and looking at an overview of what the data looks like.  You will use the 
+tabular data example from the workshop slide presentation (study_data.csv) for this 
+activity.
+
+Before you can read study_data.csv into R, you need to figure out where R is going to 
+look for data on your computer by default. Run getwd() to determine this default location. 
+The code is already included below.
+
+
+`@instructions`
+
+
+`@hint`
+
+
+
+`@sample_code`
+```{}
+### print the default location that R looks for input files.
+getwd()
+```
+
+
+
+
+
+
