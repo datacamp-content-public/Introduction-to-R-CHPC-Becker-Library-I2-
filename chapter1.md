@@ -243,13 +243,14 @@ Next, run the nrow() and ncol() functions to get the number of rows and columns 
 
 Lastly, run the summary() function to get a variety of summary statistics for study_data.
 
-The class of study_data is data.frame, but note that the variables in
+The class of study_data is data.frame, but note that the variables
 
-study_data also have classes. To determine the class of each of the variables, you can use the class()
+in study_data also have classes. To determine the class of each of the variables,
 
-function and the $ operator. The syntax is class(study_data$column_name), where you'll
+you can use the class() function and the $ operator.
 
-replace column_name with the specific column name that you're interested in.
+The syntax is class(study\_data$column\_name), where you'll replace column_name
+with the specific column name that you're interested in.
 
 
 `@sample_code`
