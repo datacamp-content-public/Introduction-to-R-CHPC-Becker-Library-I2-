@@ -241,8 +241,7 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 ### print the default location that R looks for input files.
 getwd()
 
-### Using read.csv() function to load data from study_data.csv and create a data frame named study-data,
-and print it out.
+### Using read.csv() function to load data from study_data.csv and create a data frame named study-data, and print it out.
 
 
 
