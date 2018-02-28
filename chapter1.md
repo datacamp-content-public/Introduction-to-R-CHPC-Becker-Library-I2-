@@ -105,7 +105,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key:
+key: 1a32dc77a0
 ```
 
 This exercise will help you get familiar with basic R data types and ways to store variables in R. 
