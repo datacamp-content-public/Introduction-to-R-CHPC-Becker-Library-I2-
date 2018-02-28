@@ -71,6 +71,8 @@ Calculate the area of the triangle, assigning the value to an object named area,
 
 
 ### Calculate the area of the triangle, assigning the value to an object named area, and print out area.
+
+
 ```
 `@solution`
 ```{r}
@@ -119,7 +121,20 @@ When finished, print out ID.
 
 Use the length() function to find the number of members in each of the vectors above.
 
-##### 2.
+##### 2. Data frames
+
+Use the data.frame() function to generate a data frame with the vectors, ID and Height, that you created above.
+
+Name the data frame ClientInforData.
+
+##### 3. Matrices
+
+In this exercise, you will use the matrix() function to create 2 matrices, each with 2 rows (nrow = 2) and 3 columns (ncol=3),
+using the vector c(2, 4, 6, 8, 1, 3).
+
+Fill Matrix1 by rows and fill Matrix2 by columns.
+
+Print out Matrix1 and Matrix2 when finished.
 
 `@hint`
 
@@ -133,9 +148,40 @@ Use the length() function to find the number of members in each of the vectors a
 ### Create a character vector ID, and print it out.
 
 
-### 
-```
+### Use the length() function to find the number of members in each of the vectors above.
 
+
+### Create a data frame with the vectors, ID and Height, created above and name it ClientInfoData.
+
+
+### Create Matrix1 by rows and Matrix2 by columns.
+
+
+
+### Print out Matrix1 and Matrix2.
+
+
+
+```
+`@solution`
+```{r}
+Height <- c(74, 70, 63, 69, 67, 71, 64, 66, 71, 68)
+Height
+
+ID <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
+ID
+
+length(Height)
+lenght(ID)
+
+ClientInfoData <- data.frame(ID, Height)
+
+Matrix1 <- matrix(c(2, 4, 6, 8, 1, 3), byrow = TRUE, nrow = 2, ncol = 3)
+Matrix2 <- matrix(c(2, 4, 6, 8, 1, 3), nrow = 2, ncol = 3)
+
+Matrix1
+Matrix2
+```
 
 
 
