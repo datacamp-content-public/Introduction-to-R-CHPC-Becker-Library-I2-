@@ -1,8 +1,7 @@
 ---
-title: Template Chapter 1
+title: Chapter 1 Manipulating Data
 description: >-
-  This is a template chapter.
-
+  Introduce R objects and classes, provide an overview of some popular data structures (vectors, matrices, and data frames), and touch on basic ways to manipulate data
 
 ---
 ## Ex 1.1
@@ -28,7 +27,7 @@ Check out the help documentation using the sample code below.
 `help("*")`
 
 `@instructions`
-#### 1. Basic Arithmetic operations
+##### 1. Basic Arithmetic operations
 
 Add 8 and 4 and print out the result.
 
@@ -38,7 +37,7 @@ Raise 6 to the power of 4 and print out the result.
 
 Divide 12 by 6 and print out the result.
 
-#### 2. Calculate the area of a triangle
+##### 2. Calculate the area of a triangle
 
 The area of a triangle = base * height / 2.
 
