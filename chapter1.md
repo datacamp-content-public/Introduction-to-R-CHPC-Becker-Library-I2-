@@ -138,7 +138,7 @@ Print out Matrix1 and Matrix2 when finished.
 
 `@hint`
 
-
+When fill matrices by rows, you need to use "byrow = TRUE".
 
 `@sample_code`
 ```{}
