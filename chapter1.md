@@ -87,7 +87,14 @@ height
 area <- base * height / 2
 area
 ```
+`@sct`
+```{r}
+### first instruction
+test_student_typed("8 + 4", not_typed_msg = "Something is wrong with implementing addition")
+test_output_contains("12", incorrect_msg = "Take a look at your code for the first instruction. ")
 
+
+```
 
 
 
@@ -161,9 +168,6 @@ When fill matrices by rows, you need to use "byrow = TRUE".
 
 
 ### Print out Matrix1 and Matrix2.
-
-
-
 ```
 `@solution`
 ```{r}
@@ -243,6 +247,11 @@ The syntax is class(study\_data$column\_name), where you'll replace column_name
 with the specific column name that you're interested in.
 Run the class() function on each of the columns in study\_data and see what comes out
 
+`@hint`
+To get all data except the first 8 lines, you need to use tail() function with negatiave numbers.
+To get all data except the last 8 lines, you need to use head() function with negatiave numbers.
+
+
 `@sample_code`
 ```{r}
 ### Print the default location that R looks for input files.
@@ -272,16 +281,7 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ### Run the summary() function to get a variety of summary statistics for study_data.
-
-
-
 ```
-
-`@hint`
-To get all data except the first 8 lines, you need to use tail() function with negatiave numbers.
-To get all data except the last 8 lines, you need to use head() function with negatiave numbers.
-
-
 `@solution`
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
@@ -307,6 +307,7 @@ class(study_data$Diet)
 
 
 
+
 ---
 ## Ex 1.4
 
@@ -321,7 +322,6 @@ key: d274139165
 Sometimes, it may be useful to run test analyses on a small portion of your data before analyzing the whole dataset.
 
 In this exercise, you will practice subsetting data frames in R, making use of the study_data data frame.
-
 
 `@instructions`
 Using subsetting, select the third element in column 3 in study\_data.
@@ -345,10 +345,8 @@ is also a data frame.
 
 
 `@pre_exercise_code`
-
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-
 ```
 `@sample_code`
 ```{r}
@@ -368,13 +366,7 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ### Select rows 1 to 10 and columns 1 to 5, and assign this selection to an object named study_dataSubset.
-
-
 ```
-
-`@hint`
-
-
 `@solution`
 ```{r}
 study_data[3,3]
@@ -384,8 +376,6 @@ study_data[1:2,]
 study_data[c(3,5),c(2,4)]
 study_dataSubset <- study_data[1:10,1:5]
 ```
-
-
 
 
 
@@ -405,7 +395,6 @@ key: 1e066c06d7
 
 This exercise will help you become familiar with functions that add or delete rows and columns in data frames.
 You will also learn to export data frames from R using the write.csv() function.
-
 
 `@instructions`
 Imagine you want to know if age has a role in BMI, and to start you want to examine this 
@@ -434,9 +423,10 @@ as a .csv file. To do this you'll use the write.csv() function included below. T
 file will be saved to the same location where you put the study_data.csv file when you 
 read it into R at the beginning of these activities.
 
+`@hint`
+You need to delete the column named "Exercise".
 
 `@pre_exercise_code`
-
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 study_dataSubset <- study_data[1:10,1:5]
@@ -458,12 +448,7 @@ study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
 
 ### Save study_dataSubset22to a file named "study_dataSubset2.csv"
 write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
-
 ```
-
-`@hint`
-You need to delete the column named "Exercise".
-
 `@solution`
 ```{r}
 study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
@@ -474,6 +459,8 @@ study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
 study_dataSubset2
 write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 ```
+
+
 
 
 
