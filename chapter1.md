@@ -51,7 +51,6 @@ Calculate the area of the triangle, assigning the value to an object named area,
 `@hint`
 To raise "x" to the power of "y", you need to use "x^y".
 
-
 `@sample_code`
 ```{r}
 ### Add 8 and 4 and print out the result.
@@ -87,8 +86,6 @@ height
 area <- base * height / 2
 area
 ```
-
-
 
 
 
@@ -235,7 +232,11 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 `@hint`
 
 
+`@pre_exercise_code`
 
+```{r}
+load(url("http://assets.datacamp.com/production/course_7304/study_data.csv"))
+```
 `@sample_code`
 ```{}
 ### print the default location that R looks for input files.
