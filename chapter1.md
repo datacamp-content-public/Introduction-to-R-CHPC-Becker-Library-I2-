@@ -335,7 +335,7 @@ Using subsetting, select the first 2 rows and all of the columns in study\_data.
 In addition to the forms of subsetting demonstrated in the slides, you can also use 
 subsetting to select non-contiguous portions of data. To select non-contiguous portions 
 of data from a data frame, you'll use the following syntax, 
-my_dataframe[c(rows),c(columns)]. 
+`my_dataframe[c(rows),c(columns)]`. 
 Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
 Using subsetting, select rows 1 to 10 and columns 1 to 5, and assign this selection to 
