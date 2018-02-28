@@ -241,22 +241,29 @@ getwd()
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
 
-### Use hekp() function to read more about the head() and tail() functions
+### Use help() function to read more about the head() and tail() functions
 
 
-### Use head() function
+### Return the first 10 lines of study-data
 
 
-### Use tail() function
+### Return the last 8 lines of study-data
 
 
+### Return all of study-data except the first 8 lines
+
+
+### Return all of study-data except the last 8 lines
 
 ```
 `@solution`
 ```{r}
 study-data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 study-data
-help("head()")
+help(head)
+help(tail)
+head(study-data, n = 10)
+tail(study-data, n = 8)
 
 ```
 
