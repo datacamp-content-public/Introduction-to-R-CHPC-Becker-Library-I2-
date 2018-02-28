@@ -23,7 +23,11 @@ Check out the help documentation using the sample code below.
 help("*")
 
 `@instructions`
-
+Add 8 and 4 and print out the result.
+Multiply 7 by 9 and print out the result.
+Raise 6 to the power of 4 and print out the result.
+Divide 12 by 6 and print out the result.
+The area of a triangle = base * height / 2.
 
 `@hint`
 
