@@ -214,23 +214,31 @@ run the read.csv() function.
 `@instructions`
 ##### 1. Load data from study_data.csv
 
-When running the read.csv() function from the slides, you're reading in the study_data.csv file and
-creating a data frame named study_data.
+When running the read.csv() function from the slides, you're reading in the study_data.csv file
+
+and creating a data frame named study_data.
 
 Print out study_data.
 
 ##### 2. Functions
 
-In the lecture we used the str() function to look at the structure of study_data**. We also 
-used the head() and tail() functions to look at the first and last several rows of **study_data**.
-In this exercise, you will use additional functions that will help give an overview of **study_data**.
+In the lecture we used the str() function to look at the structure of study_data.
+
+We also used the head() and tail() functions to look at the first and last several rows of study_data.
+
+In this exercise, you will use additional functions that will help give an overview of study_data.
 
 First, use the help() function to read more about the head() and tail() functions.
 
-Then generate and run code that will return the first 10 lines of **study_data**, the last 8 lines of
-**study_data,** all of **study_data** except the first 8 lines, and all of **study_data** except the last 8 lines.
+Then generate and run code that will return the first 10 lines of study_data,
 
-Next, run the nrow() and ncol() functions to get the number of rows and columns in **study_data**.
+the last 8 lines of study_data,
+
+all of study_data except the first 8 lines,
+
+and all of study_data except the last 8 lines.
+
+Next, run the nrow() and ncol() functions to get the number of rows and columns in study_data.
 
 
 
