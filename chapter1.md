@@ -194,7 +194,7 @@ Matrix2
 type: NormalExercise
 lang: r
 xp: 100
-skills: 6
+skills: 1
 key: fa22992604
 ```
 
@@ -230,8 +230,6 @@ First, use the help() function to read more about the head() and tail() function
 Then generate and run code that will return the first 10 lines of **study_data**, the last 8 lines of
 **study_data,** all of **study_data** except the first 8 lines, and all of **study_data** except the last 8 lines.
 
-`@hint`
-
 
 
 `@sample_code`
@@ -257,8 +255,6 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ### Return all of study_data except the last 8 lines
-
-
 ```
 `@solution`
 ```{r}
@@ -271,6 +267,67 @@ tail(study_data, n = 8L)
 tail(study_data, n = -8L)
 head(study_data, n = -8L)
 ```
+
+
+
+
+
+
+---
+## Ex 1.4
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: d274139165
+```
+
+Sometimes, it may be useful to run test analyses on a small portion of your data before analyzing the whole dataset.
+
+In this exercise, you will practice subsetting data frames in R, making use of the study_data data frame.
+
+
+`@instructions`
+
+
+`@hint`
+
+
+
+
+
+
+
+
+
+
+
+---
+## Ex 1.5
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 1e066c06d7
+```
+
+This exercise will help you become familiar with functions that add or delete rows and columns in data frames.
+You will also learn to export data frames from R using the write.csv() function.
+
+
+`@instructions`
+
+
+`@hint`
+
+
+
+
+
 
 
 
