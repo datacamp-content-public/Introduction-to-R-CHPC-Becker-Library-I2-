@@ -206,12 +206,12 @@ Once you determine where R is going to be looking for the data, make sure you pu
 study_data.csv file in that location.
 
 In this activity, we preload study_data.csv in the current repository, and you can simply
-run the read.csv() function from the slides to load data.
+run the read.csv() function.
 
 `@instructions`
 ##### 1. Load data from study_data.csv
 
-When running the read.csv() function from the slides, you're reading in the .csv file and
+When running the read.csv() function from the slides, you're reading in the study_data.csv file and
 creating a data frame named study-data.
 
 Print out study-data.
@@ -234,12 +234,14 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 
 `@sample_code`
 ```{}
-### print the default location that R looks for input files.
+### Print the default location that R looks for input files.
 getwd()
 
 ### Using read.csv() function to load data from study_data.csv and create a data frame named study-data, and print it out.
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
+
+### Use str() function
 
 ```
 `@solution`
