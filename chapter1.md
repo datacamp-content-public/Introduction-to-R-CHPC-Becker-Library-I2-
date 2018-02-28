@@ -303,9 +303,9 @@ class(study_data$Diet)
 
 ```yaml
 type: NormalExercise
-
-xp: 
-
+lang: r
+xp: 100
+skills: 1
 key: d274139165
 ```
 
@@ -317,10 +317,18 @@ In this exercise, you will practice subsetting data frames in R, making use of t
 `@instructions`
 
 
+`@sample_code`
+```{r}
+
+```
+
 `@hint`
 
 
+`@solution`
+```{r}
 
+```
 
 
 
@@ -334,9 +342,9 @@ In this exercise, you will practice subsetting data frames in R, making use of t
 
 ```yaml
 type: NormalExercise
-
-xp: 
-
+lang: r
+xp: 100
+skills: 1
 key: 1e066c06d7
 ```
 
@@ -347,9 +355,18 @@ You will also learn to export data frames from R using the write.csv() function.
 `@instructions`
 
 
+`@sample_code`
+```{r}
+
+```
+
 `@hint`
 
 
+`@solution`
+```{r}
+
+```
 
 
 
