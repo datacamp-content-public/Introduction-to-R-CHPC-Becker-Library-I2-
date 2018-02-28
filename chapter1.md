@@ -315,10 +315,35 @@ In this exercise, you will practice subsetting data frames in R, making use of t
 
 
 `@instructions`
+Using subsetting, select the third element in column 3 in study\_data.
 
+Using subsetting, select all of the elements in column 2 in study\_data.
+
+Using subsetting, select all of the elements in row 5 in study\_data.
+
+Using subsetting, select the first 2 rows and all of the columns in study\_data. 
+
+In addition to the forms of subsetting demonstrated in the slides, you can also use 
+subsetting to select non-contiguous portions of data. To select non-contiguous portions 
+of data from a data frame, you'll use the following syntax, 
+my_dataframe[c(rows),c(columns)]. 
+Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
 `@sample_code`
 ```{r}
+### Select the third element in column 3 in study_data.
+
+
+### Select all of the elements in column 2 in study_data.
+
+
+### Select all of the elements in row 5 in study_data.
+
+
+### Select the first 2 rows and all of the columns in study_data.
+
+
+### Select rows 3 and 5 and columns 2 and 4 in study_data.
 
 ```
 
@@ -327,7 +352,11 @@ In this exercise, you will practice subsetting data frames in R, making use of t
 
 `@solution`
 ```{r}
-
+study_data[3,3]
+study_data[,2]
+study_data[5,]
+study_data[1:2,]
+study_data[c(3,5),c(2,4)]
 ```
 
 
