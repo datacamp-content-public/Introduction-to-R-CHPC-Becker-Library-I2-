@@ -51,6 +51,7 @@ Calculate the area of the triangle, assigning the value to an object named area,
 `@hint`
 To raise "x" to the power of "y", you need to use "x^y".
 
+
 `@sample_code`
 ```{r}
 ### Add 8 and 4 and print out the result.
@@ -86,6 +87,8 @@ height
 area <- base * height / 2
 area
 ```
+
+
 
 
 
@@ -212,28 +215,27 @@ run the read.csv() function.
 ##### 1. Load data from study_data.csv
 
 When running the read.csv() function from the slides, you're reading in the study_data.csv file and
-creating a data frame named study_data.
+creating a data frame named **study_data**.
 
-Print out study_data.
+Print out **study_data**.
 
 ##### 2. Functions
 
-In the lecture we used the str() function to look at the structure of study-data. We also 
-used the head() and tail() functions to look at the first and last several rows of study-data.
-In this exercise, you will use additional functions that will help give an overview of study-data.
+In the lecture we used the str() function to look at the structure of **study_data**. We also 
+used the head() and tail() functions to look at the first and last several rows of **study_data**.
+In this exercise, you will use additional functions that will help give an overview of **study_data**.
 
 First, use the help() function to read more about the head() and tail() functions.
 
-Then generate and run code that will return the first 10 lines of study-data, the last 8 lines of
-study-data, all of study-data except the first 8 lines, and all of study-data except the last 8 lines. 
-
-
+Then generate and run code that will return the first 10 lines of **study_data**, the last 8 lines of
+**study_data,** all of **study_data** except the first 8 lines, and all of **study_data** except the last 8 lines.
 
 `@hint`
 
 
+
 `@sample_code`
-```{}
+```{r}
 ### Print the default location that R looks for input files.
 getwd()
 
@@ -255,10 +257,11 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 ### Return all of study_data except the last 8 lines
 
+
 ```
 `@solution`
 ```{r}
-sstudy_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 study_data
 help(head)
 help(tail)
@@ -267,6 +270,7 @@ tail(study_data, n = 8L)
 tail(study_data, n = -8L)
 head(study_data, n = -8L)
 ```
+
 
 
 
