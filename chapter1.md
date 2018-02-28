@@ -215,13 +215,13 @@ run the read.csv() function.
 ##### 1. Load data from study_data.csv
 
 When running the read.csv() function from the slides, you're reading in the study_data.csv file and
-creating a data frame named **study_data**.
+creating a data frame named study_data.
 
-Print out **study_data**.
+Print out study_data.
 
 ##### 2. Functions
 
-In the lecture we used the str() function to look at the structure of **study_data**. We also 
+In the lecture we used the str() function to look at the structure of study_data**. We also 
 used the head() and tail() functions to look at the first and last several rows of **study_data**.
 In this exercise, you will use additional functions that will help give an overview of **study_data**.
 
