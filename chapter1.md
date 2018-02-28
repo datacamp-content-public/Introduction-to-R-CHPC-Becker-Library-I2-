@@ -50,6 +50,10 @@ Calculate the area of the triangle, assigning the value to an object named area,
 
 
 
+`@hint`
+
+To raise "x" to the power of "y", you need to use "x^y".
+
 `@sample_code`
 ```{r}
 ### Add 8 and 4 and print out the result.
@@ -138,6 +142,8 @@ Print out Matrix1 and Matrix2 when finished.
 
 `@hint`
 
+When creating character vectors, you should put double quotes around the letter or strings treated as characters. 
+
 When fill matrices by rows, you need to use "byrow = TRUE".
 
 `@sample_code`
@@ -176,7 +182,7 @@ lenght(ID)
 
 ClientInfoData <- data.frame(ID, Height)
 
-Matrix1 <- matrix(c(2, 4, 6, 8, 1, 3), byrow = TRUE, nrow = 2, ncol = 3)
+Matrix1 <- matrix(c(2, 4, 6, 8, 1, 3), nrow = 2, ncol = 3, byrow = TRUE)
 Matrix2 <- matrix(c(2, 4, 6, 8, 1, 3), nrow = 2, ncol = 3)
 
 Matrix1
