@@ -248,8 +248,7 @@ getwd()
 ```
 `@solution`
 ```{r}
-study-data <- read.csv("study_data.csv")
-study-data
+
 ```
 
 
