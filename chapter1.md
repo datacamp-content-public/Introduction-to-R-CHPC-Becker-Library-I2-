@@ -194,7 +194,7 @@ Matrix2
 type: NormalExercise
 lang: r
 xp: 100
-skills: 1
+skills: 6
 key: fa22992604
 ```
 
@@ -244,6 +244,7 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ### Use help() function to read more about the head() and tail() functions
+
 
 
 ### Return the first 10 lines of study_data
