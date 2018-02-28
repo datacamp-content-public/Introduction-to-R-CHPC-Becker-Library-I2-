@@ -356,11 +356,11 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 `@solution`
 ```{r}
-study_data[3,3]
-study_data[,2]
-study_data[5,]
-study_data[1:2,]
-study_data[c(3,5),c(2,4)]
+#study_data[3,3]
+#study_data[,2]
+#study_data[5,]
+#study_data[1:2,]
+#study_data[c(3,5),c(2,4)]
 ```
 
 
