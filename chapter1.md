@@ -329,12 +329,18 @@ of data from a data frame, you'll use the following syntax,
 my_dataframe[c(rows),c(columns)]. 
 Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
+Using subsetting, select rows 1 to 10 and columns 1 to 5, and assign this selection to 
+an object named study\_dataSubset. Print out study_dataSubset.  
+If you run the class() function on study\_dataSubset you'll notice that study\_dataSubset 
+is also a data frame.
+
+
 `@pre_exercise_code`
 
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-```
 
+```
 `@sample_code`
 ```{r}
 ### Select the third element in column 3 in study_data.
@@ -352,6 +358,9 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 ### Select rows 3 and 5 and columns 2 and 4 in study_data.
 
 
+### Select rows 1 to 10 and columns 1 to 5, and assign this selection to an object named study_dataSubset.
+
+
 ```
 
 `@hint`
@@ -363,7 +372,8 @@ study_data[3,3]
 study_data[,2]
 study_data[5,]
 study_data[1:2,]
-study_data[c(3,5), c(2,4)]
+study_data[c(3,5),c(2,4)]
+study_dataSubset <- study_data[1:10,1:5]
 ```
 
 
@@ -420,8 +430,8 @@ read it into R at the beginning of these activities.
 
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+study_dataSubset <- study_data[1:10,1:5]
 ```
-
 `@sample_code`
 ```{r}
 ### Add age data to the study_dataSubset data frame.
@@ -443,13 +453,13 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 ```
 
 `@hint`
-
+You need to delete the column named "Exercise".
 
 `@solution`
 ```{r}
 study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
 study_dataSubset
-study_dataSubset$Age <- NULL
+study_dataSubset$Exercise <- NULL
 study_dataSubset
 study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
 study_dataSubset2
