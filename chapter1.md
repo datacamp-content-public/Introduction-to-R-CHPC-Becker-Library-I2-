@@ -25,7 +25,7 @@ Additional information on arithmetic operators in R is available using the help(
 
 Check out the help documentation using the sample code below.
 
-help("*")
+`help("*")`
 
 `@instructions`
 #### 1. Basic Arithmetic operations
@@ -51,11 +51,7 @@ Calculate the area of the triangle, assigning the value to an object named area,
 `@hint`
 
 
-`@pre_exercise_code`
-```{r}
-### 
 
-```
 `@sample_code`
 ```{r}
 ### Add 8 and 4 and print out the result.
@@ -77,10 +73,17 @@ Calculate the area of the triangle, assigning the value to an object named area,
 
 
 ### Calculate the area of the triangle, assigning the value to an object named area, and print out area.
-
-
 ```
-
+`@solution`
+```{r}
+8 + 4
+7 * 9
+6 ^ 4
+12 / 6
+base <- 2.48
+height <- 3
+area <- base * height / 2
+```
 
 
 
