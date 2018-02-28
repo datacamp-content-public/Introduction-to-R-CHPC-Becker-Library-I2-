@@ -212,9 +212,9 @@ run the read.csv() function.
 ##### 1. Load data from study_data.csv
 
 When running the read.csv() function from the slides, you're reading in the study_data.csv file and
-creating a data frame named study-data.
+creating a data frame named study_data.
 
-Print out study-data.
+Print out study_data.
 
 ##### 2. Functions
 
@@ -237,34 +237,35 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 ### Print the default location that R looks for input files.
 getwd()
 
-### Using read.csv() function to load data from study_data.csv and create a data frame named study-data, and print it out.
+### Using read.csv() function to load data from study_data.csv and create a data frame named study_data, and print it out.
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
 
 ### Use help() function to read more about the head() and tail() functions
 
 
-### Return the first 10 lines of study-data
+### Return the first 10 lines of study_data
 
 
-### Return the last 8 lines of study-data
+### Return the last 8 lines of study_data
 
 
-### Return all of study-data except the first 8 lines
+### Return all of study_data except the first 8 lines
 
 
-### Return all of study-data except the last 8 lines
+### Return all of study_data except the last 8 lines
 
 ```
 `@solution`
 ```{r}
-#study-data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-#study-data
-#help(head)
-#help(tail)
-#head(study-data, n = 10)
-#tail(study-data, n = 8)
-
+sstudy_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+study_data
+help(head)
+help(tail)
+head(study_data, n = 10L)
+tail(study_data, n = 8L)
+tail(study_data, n = -8L)
+head(study_data, n = -8L)
 ```
 
 
