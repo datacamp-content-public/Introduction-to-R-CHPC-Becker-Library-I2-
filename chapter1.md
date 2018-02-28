@@ -192,9 +192,9 @@ Matrix2
 
 ```yaml
 type: NormalExercise
-
-xp: 
-
+lang: r
+xp: 100
+skills: 1
 key: fa22992604
 ```
 
@@ -212,12 +212,12 @@ In this activity, we preload study_data.csv in the current repository, and you c
 run the read.csv() function from the slides to load data.
 
 `@instructions`
-##### 1. Load data in study_data.csv
+##### 1. Load data from study_data.csv
 
 When running the read.csv() function from the slides, you're reading in the .csv file and
-creating a data frame named study_data.
+creating a data frame named study-data.
 
-Print out study_data.
+Print out study-data.
 
 ##### 2. Functions
 
@@ -228,7 +228,7 @@ In this exercise, you will use additional functions that will help give an overv
 First, use the help() function to read more about the head() and tail() functions.
 
 Then generate and run code that will return the first 10 lines of study_data, the last 8 lines of
-study_data, all of study_data except the first 8 lines, and all of study_data except the last 8 lines. 
+study-data, all of study-data except the first 8 lines, and all of study-data except the last 8 lines. 
 
 
 
@@ -240,9 +240,18 @@ study_data, all of study_data except the first 8 lines, and all of study_data ex
 ```{}
 ### print the default location that R looks for input files.
 getwd()
+
+### Using read.csv() function to load data from study_data.csv and create a data frame named study-data,
+and print it out.
+
+
+
 ```
-
-
+`@solution`
+```{r}
+study-data <- read.csv("study_data.csv")
+study-data
+```
 
 
 
