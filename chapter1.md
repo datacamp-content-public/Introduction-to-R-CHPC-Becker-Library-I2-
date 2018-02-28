@@ -133,7 +133,7 @@ Name the data frame ClientInforData.
 
 ##### 3. Matrices
 
-In this exercise, you will use the matrix() function to create 2 matrices, each with 2 rows (nrow = 2) and 3 columns (ncol=3),
+In this exercise, you will use the matrix() function to create 2 matrices, each with 2 rows (nrow = 2) and 3 columns (ncol = 3),
 using the vector c(2, 4, 6, 8, 1, 3).
 
 Fill Matrix1 by rows and fill Matrix2 by columns.
