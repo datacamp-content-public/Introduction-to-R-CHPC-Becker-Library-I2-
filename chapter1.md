@@ -205,10 +205,33 @@ activity.
 
 Before you can read study_data.csv into R, you need to figure out where R is going to 
 look for data on your computer by default. Run getwd() to determine this default location. 
-The code is already included below.
+Once you determine where R is going to be looking for the data, make sure you put the 
+study_data.csv file in that location.
 
+In this activity, we preload study_data.csv in the current repository, and you can simply
+run the read.csv() function from the slides to load data.
 
 `@instructions`
+##### 1. Load data in study_data.csv
+
+When running the read.csv() function from the slides, you're reading in the .csv file and
+creating a data frame named study_data.
+
+Print out study_data.
+
+##### 2. Functions
+
+In the lecture we used the str() function to look at the structure of study_data. We also 
+used the head() and tail() functions to look at the first and last several rows of study_data.
+In this exercise, you will use additional functions that will help give an overview of study_data.
+
+First, use the help() function to read more about the head() and tail() functions.
+
+Then generate and run code that will return the first 10 lines of study_data, the last 8 lines of
+study_data, 
+all of study_data 
+except the first 8 lines, and all of study_data except the last 8 lines. 
+
 
 
 `@hint`
