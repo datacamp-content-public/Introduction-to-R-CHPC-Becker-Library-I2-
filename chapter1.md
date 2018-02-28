@@ -80,8 +80,11 @@ Calculate the area of the triangle, assigning the value to an object named area,
 6 ^ 4
 12 / 6
 base <- 2.48
+base
 height <- 3
+height
 area <- base * height / 2
+area
 ```
 
 
