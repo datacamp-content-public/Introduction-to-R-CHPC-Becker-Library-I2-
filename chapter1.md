@@ -48,11 +48,9 @@ Assign the value of 3 to the object height and print it out.
 
 Calculate the area of the triangle, assigning the value to an object named area, and print out area.
 
-
-
 `@hint`
-
 To raise "x" to the power of "y", you need to use "x^y".
+
 
 `@sample_code`
 ```{r}
@@ -75,8 +73,6 @@ To raise "x" to the power of "y", you need to use "x^y".
 
 
 ### Calculate the area of the triangle, assigning the value to an object named area, and print out area.
-
-
 ```
 `@solution`
 ```{r}
@@ -105,7 +101,7 @@ type: NormalExercise
 lang: r
 xp: 100
 skills: 1
-key: 1a32dc77a0
+key: 6c8bd21914
 ```
 
 This exercise will help you get familiar with basic R data types and ways to store variables in R. 
@@ -141,13 +137,13 @@ Fill Matrix1 by rows and fill Matrix2 by columns.
 Print out Matrix1 and Matrix2 when finished.
 
 `@hint`
-
 When creating character vectors, you should put double quotes around the letter or strings treated as characters. 
 
 When fill matrices by rows, you need to use "byrow = TRUE".
 
+
 `@sample_code`
-```{}
+```{r}
 ### Create a numeric vector Height, and print it out.
 
 
@@ -165,9 +161,6 @@ When fill matrices by rows, you need to use "byrow = TRUE".
 
 
 ### Print out Matrix1 and Matrix2.
-
-
-
 ```
 `@solution`
 ```{r}
@@ -178,7 +171,7 @@ ID <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
 ID
 
 length(Height)
-lenght(ID)
+length(ID)
 
 ClientInfoData <- data.frame(ID, Height)
 
