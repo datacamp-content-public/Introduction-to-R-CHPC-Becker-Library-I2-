@@ -235,7 +235,7 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 `@pre_exercise_code`
 
 ```{r}
-###load(url("http://assets.datacamp.com/production/course_7304/study_data.csv"))
+load(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 ```
 `@sample_code`
 ```{}
