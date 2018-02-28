@@ -98,9 +98,9 @@ area
 
 ```yaml
 type: NormalExercise
-
-xp: 
-
+lang: r
+xp: 100
+skills: 1
 key: e4c5749e92
 ```
 
