@@ -258,10 +258,10 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 ```
 `@solution`
 ```{r}
-study-data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-study-data
-help(head)
-help(tail)
+#study-data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+#study-data
+#help(head)
+#help(tail)
 #head(study-data, n = 10)
 #tail(study-data, n = 8)
 
