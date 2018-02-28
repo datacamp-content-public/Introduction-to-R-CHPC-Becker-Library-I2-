@@ -399,7 +399,8 @@ Now that you've added age, go ahead and print study\_dataSubset to look at the a
 Also imagine that you are no longer interested in the exercise data in study\_dataSubset 
 and you want to delete that column.  
 You can delete columns from data frames using the $ operator and NULL as shown in the 
-following example code: **my_dataframe$colname <- NULL**. 
+following example code: **my_dataframe$colname <- NULL**.
+
 Go ahead and customize the example code to reflect the correct data frame and column name 
 and run it. Print out study_dataSubset again to look at the updated data.
 
