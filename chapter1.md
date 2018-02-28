@@ -205,6 +205,7 @@ activity.
 
 Before you can read study_data.csv into R, you need to figure out where R is going to 
 look for data on your computer by default. Run getwd() to determine this default location. 
+
 Once you determine where R is going to be looking for the data, make sure you put the 
 study_data.csv file in that location.
 
