@@ -331,6 +331,9 @@ Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
 `@sample_code`
 ```{r}
+### Load study_data
+study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+
 ### Select the third element in column 3 in study_data.
 
 
@@ -344,6 +347,7 @@ Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
 
 ### Select rows 3 and 5 and columns 2 and 4 in study_data.
+
 
 ```
 
