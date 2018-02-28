@@ -389,10 +389,55 @@ You will also learn to export data frames from R using the write.csv() function.
 
 
 `@instructions`
+Imagine you want to know if age has a role in BMI, and to start you want to examine this 
+in the context of a portion of the study\_data data, the study\_dataSubset data frame. You 
+decide to do this by adding the age of your participants to the study\_dataSubset 
+data frame using the c() function. The code is included below.
 
+Now that you've added age, go ahead and print study\_dataSubset to look at the additional column.
+
+Also imagine that you are no longer interested in the exercise data in study\_dataSubset 
+and you want to delete that column.  
+You can delete columns from data frames using the $ operator and NULL as shown in the 
+following example code: **my_dataframe$colname <- NULL**. 
+Go ahead and customize the example code to reflect the correct data frame and column name 
+and run it. Print out study_dataSubset again to look at the updated data.
+
+You now realize that one participant is missing in your data and you want to add it to 
+study\_dataSubset. To add an entire row, you will use the rbind( )function. Imagine you need to
+add the following data: ID = K, Height = 61, Weight = 185, BMI = 26, Age = 40, the rbind()
+function can be used to add the entire row as shown in the code below, assigning the
+name study\_dataSubset2 to the updated data frame. Print out study\_dataSubset2 to take a look at the updated data frame.
+
+At this point, you want to export study_dataSubset2 from R and save it on your computer 
+as a .csv file. To do this you'll use the write.csv() function included below. The .csv 
+file will be saved to the same location where you put the study_data.csv file when you 
+read it into R at the beginning of these activities.
+
+
+`@pre_exercise_code`
+
+```{r}
+study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+```
 
 `@sample_code`
 ```{r}
+### Add age data to the study_dataSubset data frame.
+study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
+
+### Print out study_dataSubset.
+
+
+### Delete Age column in study_dataSubset and print out the updated data.
+
+
+### Add an entire row to study_dataSubset, and rename the updated data frame to study_dataSubset2. Print the updated data frame.
+study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
+
+
+### Save study_dataSubset22to a file named "study_dataSubset2.csv"
+write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 
 ```
 
@@ -401,13 +446,14 @@ You will also learn to export data frames from R using the write.csv() function.
 
 `@solution`
 ```{r}
-
+study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
+study_dataSubset
+study_dataSubset$Age <- NULL
+study_dataSubset
+study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
+study_dataSubset2
+write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 ```
-
-
-
-
-
 
 
 
