@@ -161,6 +161,9 @@ When fill matrices by rows, you need to use "byrow = TRUE".
 
 
 ### Print out Matrix1 and Matrix2.
+
+
+
 ```
 `@solution`
 ```{r}
@@ -262,7 +265,7 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 ### Return all of study_data except the first 8 lines.
 
 
-### Return all of study_data except the last 8 lines.
+### Return all of study_data except the last 10 lines.
 
 
 ### Run the nrow() and ncol() functions to get the number of rows and columns in study_data.
@@ -273,6 +276,12 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ```
+
+`@hint`
+To get all data except the first 8 lines, you need to use tail() function with negatiave numbers.
+To get all data except the last 8 lines, you need to use head() function with negatiave numbers.
+
+
 `@solution`
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
@@ -282,7 +291,7 @@ help(tail)
 head(study_data, n = 10L)
 tail(study_data, n = 8L)
 tail(study_data, n = -8L)
-head(study_data, n = -8L)
+head(study_data, n = -10L)
 nrow(study_data)
 ncol(study_data)
 summary(study_data)
@@ -409,7 +418,7 @@ Now that you've added age, go ahead and print study\_dataSubset to look at the a
 Also imagine that you are no longer interested in the exercise data in study\_dataSubset 
 and you want to delete that column.  
 You can delete columns from data frames using the $ operator and NULL as shown in the 
-following example code: **my_dataframe$colname <- NULL**.
+following example code: `my_dataframe$colname <- NULL`.
 
 Go ahead and customize the example code to reflect the correct data frame and column name 
 and run it. Print out study_dataSubset again to look at the updated data.
@@ -420,7 +429,7 @@ add the following data: ID = K, Height = 61, Weight = 185, BMI = 26, Age = 40, t
 function can be used to add the entire row as shown in the code below, assigning the
 name study\_dataSubset2 to the updated data frame. Print out study\_dataSubset2 to take a look at the updated data frame.
 
-At this point, you want to export study_dataSubset2 from R and save it on your computer 
+At this point, you want to export study\_dataSubset2 from R and save it on your computer 
 as a .csv file. To do this you'll use the write.csv() function included below. The .csv 
 file will be saved to the same location where you put the study_data.csv file when you 
 read it into R at the beginning of these activities.
