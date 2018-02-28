@@ -24,6 +24,7 @@ R has a variety of arithmetic operators such as addition "+", multiplication "*"
 Additional information on arithmetic operators in R is available using the help() function  by putting any of the arithmetic operators in quotes.
 
 Check out the help documentation using the sample code below.
+
 help("*")
 
 `@instructions`
@@ -59,17 +60,25 @@ Calculate the area of the triangle, assigning the value to an object named area,
 ```{r}
 ### Add 8 and 4 and print out the result.
 
+
 ### Multiply 7 by 9 and print out the result.
+
 
 ### Raise 6 to the power of 4 and print out the result.
 
+
 ### Divide 12 by 6 and print out the result.
+
 
 ### Assign the value of 2.48 to the object base and print it out.
 
+
 ### Assign the value of 3 to the object height and print it out.
 
+
 ### Calculate the area of the triangle, assigning the value to an object named area, and print out area.
+
+
 ```
 
 
