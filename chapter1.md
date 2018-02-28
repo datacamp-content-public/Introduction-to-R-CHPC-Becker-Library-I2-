@@ -218,13 +218,13 @@ Print out study-data.
 
 ##### 2. Functions
 
-In the lecture we used the str() function to look at the structure of study_data. We also 
-used the head() and tail() functions to look at the first and last several rows of study_data.
-In this exercise, you will use additional functions that will help give an overview of study_data.
+In the lecture we used the str() function to look at the structure of study-data. We also 
+used the head() and tail() functions to look at the first and last several rows of study-data.
+In this exercise, you will use additional functions that will help give an overview of study-data.
 
 First, use the help() function to read more about the head() and tail() functions.
 
-Then generate and run code that will return the first 10 lines of study_data, the last 8 lines of
+Then generate and run code that will return the first 10 lines of study-data, the last 8 lines of
 study-data, all of study-data except the first 8 lines, and all of study-data except the last 8 lines. 
 
 
@@ -238,7 +238,7 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 getwd()
 
 ### Using read.csv() function to load data from study_data.csv and create a data frame named study-data, and print it out.
-
+study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
 
 ```
