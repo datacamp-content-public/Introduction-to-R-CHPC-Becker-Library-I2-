@@ -232,11 +232,6 @@ study-data, all of study-data except the first 8 lines, and all of study-data ex
 `@hint`
 
 
-`@pre_exercise_code`
-
-```{r}
-load(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-```
 `@sample_code`
 ```{}
 ### print the default location that R looks for input files.
