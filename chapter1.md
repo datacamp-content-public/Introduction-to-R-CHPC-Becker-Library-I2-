@@ -200,58 +200,45 @@ key: fa22992604
 
 This exercise will use R to explore tabular data in data frames. This includes getting 
 data into R and looking at an overview of what the data looks like.  You will use the 
-tabular data example from the workshop slide presentation (study_data.csv) for this 
+tabular data example from the workshop slide presentation (study\_data.csv) for this 
 activity.
 
 Before you can read study_data.csv into R, you need to figure out where R is going to 
 look for data on your computer by default. Run getwd() to determine this default location. 
-
 Once you determine where R is going to be looking for the data, make sure you put the 
-study_data.csv file in that location.
+study\_data.csv file in that location.
 
-In this activity, we preload study_data.csv in the current repository, and you can simply
+In this activity, we preload study\_data.csv in the current repository, and you can simply
 run the read.csv() function.
 
 `@instructions`
 ##### 1. Load data from study_data.csv
 
-When running the read.csv() function from the slides, you're reading in the study_data.csv file
+When running the read.csv() function from the slides, you're reading in the study\_data.csv file
+and creating a data frame named study\_data.
 
-and creating a data frame named study_data.
-
-Print out study_data.
+Print out study\_data.
 
 ##### 2. Functions
 
-In the lecture we used the str() function to look at the structure of study_data.
-
-We also used the head() and tail() functions to look at the first and last several rows of study_data.
-
-In this exercise, you will use additional functions that will help give an overview of study_data.
+In the lecture we used the str() function to look at the structure of study\_data.
+We also used the head() and tail() functions to look at the first and last several rows of study\_data.
+In this exercise, you will use additional functions that will help give an overview of study\_data.
 
 First, use the help() function to read more about the head() and tail() functions.
 
-Then generate and run code that will return the first 10 lines of study_data,
+Then generate and run code that will return the first 10 lines of study\_data, the last 8 lines of study\_data,
+all of study\_data except the first 8 lines, and all of study\_data except the last 8 lines.
 
-the last 8 lines of study_data,
+Next, run the nrow() and ncol() functions to get the number of rows and columns in study\_data.
 
-all of study_data except the first 8 lines,
+Lastly, run the summary() function to get a variety of summary statistics for study\_data.
 
-and all of study_data except the last 8 lines.
-
-Next, run the nrow() and ncol() functions to get the number of rows and columns in study_data.
-
-Lastly, run the summary() function to get a variety of summary statistics for study_data.
-
-The class of study_data is data.frame, but note that the variables
-
-in study_data also have classes. To determine the class of each of the variables,
-
-you can use the class() function and the $ operator.
-
+The class of study\_data is data.frame, but note that the variables in study\_data also have classes.
+To determine the class of each of the variables, you can use the class() function and the $ operator.
 The syntax is class(study\_data$column\_name), where you'll replace column_name
 with the specific column name that you're interested in.
-
+Run the class() function on each of the columns in study\_data and see what comes out
 
 `@sample_code`
 ```{r}
