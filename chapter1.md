@@ -329,11 +329,14 @@ of data from a data frame, you'll use the following syntax,
 my_dataframe[c(rows),c(columns)]. 
 Use this syntax to select rows 3 and 5 and columns 2 and 4 in study\_data.
 
+`@pre_exercise_code`
+
+```{r}
+study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+```
+
 `@sample_code`
 ```{r}
-### Load study_data
-study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
-
 ### Select the third element in column 3 in study_data.
 
 
@@ -356,11 +359,11 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 `@solution`
 ```{r}
-#study_data[3,3]
-#study_data[,2]
-#study_data[5,]
-#study_data[1:2,]
-#study_data[c(3,5),c(2,4)]
+study_data[3,3]
+study_data[,2]
+study_data[5,]
+study_data[1:2,]
+study_data[c(3,5), c(2,4)]
 ```
 
 
