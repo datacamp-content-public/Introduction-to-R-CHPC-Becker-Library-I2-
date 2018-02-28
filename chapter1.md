@@ -241,11 +241,22 @@ getwd()
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
 
-### Use str() function
+### Use hekp() function to read more about the head() and tail() functions
+
+
+### Use head() function
+
+
+### Use tail() function
+
+
 
 ```
 `@solution`
 ```{r}
+study-data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
+study-data
+help("head()")
 
 ```
 
