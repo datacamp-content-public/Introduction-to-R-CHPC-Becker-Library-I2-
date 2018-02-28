@@ -3,6 +3,7 @@ title: Chapter 1 Manipulating Data
 description: >-
   Introduce R objects and classes, provide an overview of some popular data structures (vectors, matrices, and data frames), and touch on basic ways to manipulate data
 
+
 ---
 ## Ex 1.1
 
@@ -47,8 +48,6 @@ Assign the value of 3 to the object height and print it out.
 
 Calculate the area of the triangle, assigning the value to an object named area, and print out area.
 
-`@hint`
-
 
 
 `@sample_code`
@@ -86,6 +85,57 @@ height
 area <- base * height / 2
 area
 ```
+
+
+
+
+
+
+---
+## Ex 1.2
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: e4c5749e92
+```
+
+This exercise will help you get familiar with basic R data types and ways to store variables in R. 
+
+This includes vectors, matrices, and data frames.
+
+`@instructions`
+##### 1. Vectors
+
+Create a numeric vector with the values in parentheses (74, 70, 63, 69, 67, 71, 64, 66, 71, 68) and assign it to the object Height.
+
+When finished, print out Height.
+
+Next, create a character vector with the values in parentheses (A, B, C, D, E, F, G, H, I, J) and assign it to an object named ID.
+
+When finished, print out ID.
+
+Use the length() function to find the number of members in each of the vectors above.
+
+##### 2.
+
+`@hint`
+
+
+
+`@sample_code`
+```{}
+### Create a numeric vector Height, and print it out.
+
+
+### Create a character vector ID, and print it out.
+
+
+### 
+```
+
 
 
 
