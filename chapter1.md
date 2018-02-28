@@ -230,6 +230,9 @@ First, use the help() function to read more about the head() and tail() function
 Then generate and run code that will return the first 10 lines of **study_data**, the last 8 lines of
 **study_data,** all of **study_data** except the first 8 lines, and all of **study_data** except the last 8 lines.
 
+Next, run the nrow() and ncol() functions to get the number of rows and columns in **study_data**.
+
+
 
 
 `@sample_code`
