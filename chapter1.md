@@ -116,6 +116,9 @@ test_student_typed("height", not_typed_msg = "You need to give the correct objec
 ### seventh instruction
 test_output_contains("area <- base * height / 2", incorrect_msg = "Make sure you have assgined correct value to the object area !!")
 test_student_typed("area", not_typed_msg = "You need to give the correct object name !!")
+
+test_error()
+success_msg("Good job! You've learned some very important and useful tools in this course.")
 ```
 
 
