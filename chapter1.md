@@ -119,7 +119,7 @@ test_student_typed("base <- 2.48", not_typed_msg = "You need to use <- to assign
 test_student_typed("height <- 3", not_typed_msg = "You need to use <- to assign correct values to the object height !!")
 
 ### seventh instruction
-test_output_contains("area <- base * height / 2", incorrect_msg = "Make sure you have assgined correct value to the object area !!")
+test_student_typed("area <- base * height / 2", not_typed_msg = "Make sure you have assgined correct value to the object area !!")
 
 test_error()
 success_msg("Good job! You've learned some very important and useful tools in this course.")
