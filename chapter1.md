@@ -526,7 +526,6 @@ test_student_typed("study_data[c(3,5),c(2,4)]", not_typed_msg = "You need to ass
 
 ### fourth instruction
 test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset !!")
-test_output_contains("study_dataSubset <- study_data[1:10,1:5]", incorrect_msg = "You need to use `study_data[1:10,1:5]`.")
 ```
 
 
