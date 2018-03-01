@@ -66,13 +66,24 @@ To raise "x" to the power of "y", you need to use "x^y".
 ### Divide 12 by 6 and print out the result.
 
 
-### Assign the value of 2.48 to the object base and print it out.
+### Assign the value of 2.48 to the object base.
 
 
-### Assign the value of 3 to the object height and print it out.
+### Print the value of the object base.
 
 
-### Calculate the area of the triangle, assigning the value to an object named area, and print out area.
+### Assign the value of 3 to the object height and
+
+
+### Print the value of the object height.
+
+
+### Calculate the area of the triangle, assigning the value to an object named area.
+
+
+### Print the value of object area.
+
+
 ```
 `@solution`
 ```{r}
