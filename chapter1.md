@@ -380,7 +380,7 @@ test_function("length", incorrect_msg = "Did you the function `length` on the ob
 test_function("length", incorrect_msg = "Did you the function `length` on the object tail??")
 
 ### fourth instruction
-test_output_contains("head(study_data, n = 10L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
+#test_output_contains("head(study_data, n = 10L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
 
 ### fifth instruction
 #test_output_contains("tail(study_data, n = 8L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
