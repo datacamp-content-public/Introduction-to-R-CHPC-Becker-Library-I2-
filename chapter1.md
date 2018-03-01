@@ -90,8 +90,8 @@ area
 `@sct`
 ```{r}
 ### first instruction
-test_object("8 + 4", incorrect_msg = "Something is wrong with implementing the addition !!")
-test_output_contains("12", incorrect_msg = "Make sure you have assigned correct values !!")
+#test_object("8 + 4", incorrect_msg = "Something is wrong with implementing the addition !!")
+test_output_contains("8 + 4", incorrect_msg = "Make sure you have assigned correct values !!")
 
 ### second instruction
 #test_object("7 * 9", incorrect_msg = "Something is wrong with implementing the multiplication !!")
