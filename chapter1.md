@@ -584,7 +584,7 @@ study_dataSubset <- study_data[1:10,1:5]
 `@sample_code`
 ```{r}
 ### Add age data to the study_dataSubset data frame.
-#study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
+study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
 
 ### Print out study_dataSubset.
 
@@ -616,15 +616,8 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 `@sct`
 ```{r}
 ### first instruction
-test_object("study_dataSubset$Age", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
+test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset !!")
 
-### second instruction
-#test_object("study_dataSubset$Exercise", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Exercise !!")
-
-### third instruction
-#test_object("study_dataSubset2", incorrect_msg = "You need to assign correct value to the object study_dataSubset2 !!")
 ```
-
-
 
 
