@@ -396,10 +396,10 @@ test_object("study_data", incorrect_msg = "You need to use <- to assign correct 
 test_function("read.csv", incorrect_msg = "Did you create a data frame using `read.csv`?")
 
 ### second instruction
-test_student_typed("help(head)", not_typed_msg = "Did you the function `help` to find more info on the function head??")
+test_student_typed("help(head)", not_typed_msg = "Did you use the function `help` to find more info on the function head??")
 
 ### third instruction
-test_student_typed("help(tail)", not_typed_msg = "Did you the function `help` to find more info on the function tail??")
+test_student_typed("help(tail)", not_typed_msg = "Did you use the function `help` to find more info on the function tail??")
 
 ### fourth instruction
 test_function("head", incorrect_msg = "Did you extract data using `head`?")
@@ -505,8 +505,27 @@ study_data[1:2,]
 study_data[c(3,5),c(2,4)]
 study_dataSubset <- study_data[1:10,1:5]
 ```
+`@sct`
+```{r}
+### first instruction
+test_student_typed("study_data[3,3]", not_typed_msg = "You need to assign correct numbers both to row and column separated by comma")
 
+### second instruction
+test_student_typed("study_data[,2]", not_typed_msg = "You need to assign correct numbers both to row and column separated by comma")
 
+### third instruction
+test_student_typed("study_data[5,]", not_typed_msg = "You need to assign correct numbers both to row and column separated by comma")
+
+### fourth instruction
+test_student_typed("study_data[1:2,]", not_typed_msg = "You need to assign correct numbers both to row and column separated by comma")
+
+### fifth instruction
+test_student_typed("study_data[c(3,5),c(2,4)]", not_typed_msg = "You need to assign correct numbers both to row and column separated by comma")
+
+### fourth instruction
+test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset !!")
+test_output_contains("study_dataSubset <- study_data[1:10,1:5]", incorrect_msg = "You need to use `study_data[1:10,1:5]`.")
+```
 
 
 
