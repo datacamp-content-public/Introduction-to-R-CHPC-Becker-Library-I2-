@@ -90,32 +90,34 @@ area
 `@sct`
 ```{r}
 ### first instruction
-#test_object("8 + 4", incorrect_msg = "Something is wrong with implementing the addition !!")
-test_output_contains("8 + 4", incorrect_msg = "Make sure you have assigned correct values !!")
+test_student_typed("8 + 4", not_typed_msg = "Make sure you have used correct values to implement the addition!!")
 
 ### second instruction
-#test_object("7 * 9", incorrect_msg = "Something is wrong with implementing the multiplication !!")
-#test_output_contains("63", incorrect_msg = "Make sure you have assigned correct values !!")
+test_student_typed("7 * 9", not_typed_msg = "Make sure you have used correct values to implement the multiplication!!")
 
 ### third instruction
-#test_object("6 ^ 4", incorrect_msg = "Something is wrong with implementing the exponentiation !!")
-#test_output_contains("1296", incorrect_msg = "Make sure you have assigned correct values !!")
+test_student_typed("6 ^ 4", not_typed_msg = "Make sure you have used correct values to implement the exponentiation!!")
 
 ### fourth instruction
-#test_object("12 / 6", incorrect_msg = "Something is wrong with implementing the division !!")
-#test_output_contains("2", incorrect_msg = "Make sure you have assigned correct values !!")
+test_student_typed("12 / 6", not_typed_msg = "Make sure you have used correct values to implement the division!!")
 
 ### fifth instruction
-#test_student_typed("base <- 2.48", not_typed_msg = "You need to use <- to assign correct values to the object base !!")
-#test_student_typed("base", not_typed_msg = "You need to give the correct object name !!")
+test_student_typed("base <- 2.48", not_typed_msg = "You need to use <- to assign correct values to the object base !!")
 
 ### sixth instruction
-#test_student_typed("height <- 3", not_typed_msg = "You need to use <- to assign correct values to the object height !!")
-#test_student_typed("height", not_typed_msg = "You need to give the correct object name !!")
+test_student_typed("base", not_typed_msg = "You need to give the correct object name !!")
 
 ### seventh instruction
-#test_output_contains("area <- base * height / 2", incorrect_msg = "Make sure you have assgined correct value to the object area !!")
-#test_student_typed("area", not_typed_msg = "You need to give the correct object name !!")
+test_student_typed("height <- 3", not_typed_msg = "You need to use <- to assign correct values to the object height !!")
+
+### eighth instruction
+test_student_typed("height", not_typed_msg = "You need to give the correct object name !!")
+
+### ninth instruction
+test_output_contains("area <- base * height / 2", incorrect_msg = "Make sure you have assgined correct value to the object area !!")
+
+### tenth instruction
+test_student_typed("area", not_typed_msg = "You need to give the correct object name !!")
 
 test_error()
 success_msg("Good job! You've learned some very important and useful tools in this course.")
