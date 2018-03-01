@@ -354,7 +354,10 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 ### Run the nrow() and ncol() functions to get the number of rows and columns in study_data.
 
 
+
 ### Run the summary() function to get a variety of summary statistics for study_data.
+
+
 ```
 `@solution`
 ```{r}
@@ -412,7 +415,7 @@ test_output_contains("tail(study_data, n = -8L)", incorrect_msg = "You need to u
 
 ### seventh instruction
 test_function("head", incorrect_msg = "Did you extract data using `head`?")
-test_output_contains("head(study_data, n = -8L)", incorrect_msg = "You need to use `n = -10L`.")
+test_output_contains("head(study_data, n = -10L)", incorrect_msg = "You need to use `n = -10L`.")
 
 ### eighth instruction
 test_function("nrow", incorrect_msg = "Did you count the number of rows using `nrow`?")
