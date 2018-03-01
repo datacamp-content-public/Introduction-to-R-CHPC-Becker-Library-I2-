@@ -113,16 +113,16 @@ test_student_typed("6 ^ 4", not_typed_msg = "Make sure you have used correct val
 test_student_typed("12 / 6", not_typed_msg = "Make sure you have used correct values to implement the division!!")
 
 ### fifth instruction
-test_student_typed("base <- 2.48", not_typed_msg = "You need to use <- to assign correct values to the object base !!")
+test_object("base", incorrect_msg = "You need to use <- to assign correct values to the object base !!")
 
 ### sixth instruction
-test_student_typed("height <- 3", not_typed_msg = "You need to use <- to assign correct values to the object height !!")
+test_object("height", incorrect_msg = "You need to use <- to assign correct values to the object height !!")
 
 ### seventh instruction
-test_student_typed("area <- base * height / 2", not_typed_msg = "Make sure you have assgined correct value to the object area !!")
+test_object("area", incorrect_msg = "You need to use <- to assign correct values to the object area !!")
 
 test_error()
-success_msg("Good job! You've learned some very important and useful tools in this course.")
+success_msg("Excellent job! You've learned some very important and useful tools in this course.")
 ```
 
 
