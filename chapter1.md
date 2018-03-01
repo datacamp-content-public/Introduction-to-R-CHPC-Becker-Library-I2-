@@ -324,8 +324,10 @@ getwd()
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 
 
-### Use help() function to read more about the head() and tail() functions.
+### Use help() function to read more about the head() function.
 
+
+### Use help() function to read more about the tail() function.
 
 
 ### Return the first 10 lines of study_data.
@@ -365,7 +367,30 @@ class(study_data$BMI)
 class(study_data$Exercise)
 class(study_data$Diet)
 ```
+`@sct`
+```{r}
+### first instruction
+test_object("study_data", incorrect_msg = "You need to use <- to assign correct values to the object study_data !!")
+test_function("read.csv", incorrect_msg = "Did you create a data frame using `read.csv`?")
 
+### second instruction
+test_function("length", incorrect_msg = "Did you the function `length` on the object head??")
+
+### third instruction
+test_function("length", incorrect_msg = "Did you the function `length` on the object tail??")
+
+### fourth instruction
+test_output_contains("head(study_data, n = 10L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
+
+### fifth instruction
+#test_output_contains("tail(study_data, n = 8L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
+
+### sixth instruction
+#test_output_contains("tail(study_data, n = -8L)", incorrect_msg = "You need to assign negative integer to `n`.")
+
+### seventh instruction
+#test_output_contains("head(study_data, n = -10L)", incorrect_msg = "To extract the data by lines, you need to use `n = xL`.")
+```
 
 
 
