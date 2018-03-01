@@ -225,32 +225,32 @@ Matrix2
 ```{r}
 ### first instruction
 test_object("Height", incorrect_msg = "You need to use <- to assign correct values to the object Height !!")
-test_function("c", incorrect_msg = "Did you create a vector using `c`?"
+test_function("c", incorrect_msg = "Did you create a vector using `c`?")
 
 ### second instruction
 test_object("ID", incorrect_msg = "You need to use <- to assign correct values to the object ID !!")
-test_function("c", incorrect_msg = "Did you create a vector using `c`?"
+test_function("c", incorrect_msg = "Did you create a vector using `c`?")
 
 ### third instruction
-test_function("length", incorrect_msg = "Did you use the function `length` on the object Height?"
+test_function("length", incorrect_msg = "Did you use the function `length` on the object Height?")
 
 ### fourth instruction
-test_function("length", incorrect_msg = "Did you use the function `length` on the object ID?"
+test_function("length", incorrect_msg = "Did you use the function `length` on the object ID?")
 
 ### fifth instruction
 test_object("ClientInfoData", incorrect_msg = "You need to use <- to assign correct values to the object ClientInfoData !!")
-test_function("data.frame", incorrect_msg = "Did you create a data frame using `data.frame`?"
+test_function("data.frame", incorrect_msg = "Did you create a data frame using `data.frame`?")
 
 ### sixth instruction
 test_object("Matrix1", incorrect_msg = "You need to use <- to assign correct values to the object Matrix1 !!")
-test_function("matrix", incorrect_msg = "Did you create a matrix using `matrix`?"
+test_function("matrix", incorrect_msg = "Did you create a matrix using `matrix`?")
 
 ### seventh instruction
 test_object("Matrix2", incorrect_msg = "You need to use <- to assign correct values to the object Matrix2 !!")
-test_function("matrix", incorrect_msg = "Did you create a matrix using `matrix`?"
+test_function("matrix", incorrect_msg = "Did you create a matrix using `matrix`?")
 
 test_error()
-success_msg("Excellent job! You've learned some very important and useful tools in this course.")
+success_msg("Excellent job! You've learned some very important and useful functions in this course.")
 ```
 
 
