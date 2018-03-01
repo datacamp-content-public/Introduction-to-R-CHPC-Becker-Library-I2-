@@ -5,7 +5,7 @@ description: >-
 
 
 ---
-## Ex 1.1
+## Ex. 1.1
 
 ```yaml
 type: NormalExercise
@@ -90,10 +90,32 @@ area
 `@sct`
 ```{r}
 ### first instruction
-test_student_typed("8 + 4", not_typed_msg = "Something is wrong with implementing addition")
-test_output_contains("12", incorrect_msg = "Take a look at your code for the first instruction. ")
+test_object("8 + 4", incorrect_msg = "Something is wrong with implementing the addition !!")
+test_output_contains("12", incorrect_msg = "Make sure you have assigned correct values !!")
 
+### second instruction
+test_object("7 * 9", incorrect_msg = "Something is wrong with implementing the multiplication !!")
+test_output_contains("63", incorrect_msg = "Make sure you have assigned correct values !!")
 
+### third instruction
+test_object("6 ^ 4", incorrect_msg = "Something is wrong with implementing the exponentiation !!")
+test_output_contains("1296", incorrect_msg = "Make sure you have assigned correct values !!")
+
+### fourth instruction
+test_object("12 / 6", incorrect_msg = "Something is wrong with implementing the division !!")
+test_output_contains("2", incorrect_msg = "Make sure you have assigned correct values !!")
+
+### fifth instruction
+test_student_typed("base <- 2.48", not_typed_msg = "You need to use <- to assign correct values to the object base !!")
+test_student_typed("base", not_typed_msg = "You need to give the correct object name !!")
+
+### sixth instruction
+test_student_typed("height <- 3", not_typed_msg = "You need to use <- to assign correct values to the object height !!")
+test_student_typed("height", not_typed_msg = "You need to give the correct object name !!")
+
+### seventh instruction
+test_output_contains("area <- base * height / 2", incorrect_msg = "Make sure you have assgined correct value to the object area !!")
+test_student_typed("area", not_typed_msg = "You need to give the correct object name !!")
 ```
 
 
@@ -101,7 +123,7 @@ test_output_contains("12", incorrect_msg = "Take a look at your code for the fir
 
 
 ---
-## Ex 1.2
+## Ex. 1.2
 
 ```yaml
 type: NormalExercise
@@ -195,7 +217,7 @@ Matrix2
 
 
 ---
-## Ex 1.3
+## Ex. 1.3
 
 ```yaml
 type: NormalExercise
@@ -309,7 +331,7 @@ class(study_data$Diet)
 
 
 ---
-## Ex 1.4
+## Ex. 1.4
 
 ```yaml
 type: NormalExercise
@@ -383,7 +405,7 @@ study_dataSubset <- study_data[1:10,1:5]
 
 
 ---
-## Ex 1.5
+## Ex. 1.5
 
 ```yaml
 type: NormalExercise
