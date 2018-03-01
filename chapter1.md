@@ -616,16 +616,13 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 `@sct`
 ```{r}
 ### first instruction
-test_student_typed("study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)", not_typed_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
+test_object("study_dataSubset$Age", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
 
 ### second instruction
-test_student_typed("study_dataSubset$Exercise <- NULL", not_typed_msg = "You need to assign correct value to the object study_dataSubset$Exercise !!")
+test_object("study_dataSubset$Exercise", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Exercise !!")
 
 ### third instruction
-test_student_typed("study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))", not_typed_msg = "You need to assign correct value to the object study_dataSubset2 !!")
-
-### fourth instruction
-test_student_typed("write.csv(study_dataSubset2, file = "study_dataSubset2.csv")", not_typed_msg = "You need to check the syntax of the function write.csv !!")
+test_object("study_dataSubset2", incorrect_msg = "You need to assign correct value to the object study_dataSubset2 !!")
 ```
 
 
