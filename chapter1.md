@@ -21,11 +21,11 @@ Feel free to experiment with your own calculations as well.
 
 R has a variety of arithmetic operators such as addition "+", multiplication "*",  division "/", exponentiation "^", and more.
 
-Additional information on arithmetic operators in R is available using the help() function  by putting any of the arithmetic operators in quotes.
+Additional information on arithmetic operators in R is available using the help() function by putting any of the arithmetic operators in quotes.
 
 Check out the help documentation using the sample code below.
 
-`help("*")`
+`help(FUNCTION_NAME)`
 
 `@instructions`
 ##### 1. Basic Arithmetic operations
@@ -88,14 +88,23 @@ To raise "x" to the power of "y", you need to use "x^y".
 `@solution`
 ```{r}
 8 + 4
+
 7 * 9
+
 6 ^ 4
+
 12 / 6
+
 base <- 2.48
+
 base
+
 height <- 3
+
 height
+
 area <- base * height / 2
+
 area
 ```
 `@sct`
@@ -351,16 +360,25 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 ```{r}
 study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/datasets/study_data.csv"))
 study_data
+
 help(head)
 
 help(tail)
+
 head(study_data, n = 10L)
+
 tail(study_data, n = 8L)
+
 tail(study_data, n = -8L)
+
 head(study_data, n = -10L)
+
 nrow(study_data)
+
 ncol(study_data)
+
 summary(study_data)
+
 class(study_data$ID)
 class(study_data$Height)
 class(study_data$Weight)
@@ -390,16 +408,22 @@ test_output_contains("tail(study_data, n = 8L)", incorrect_msg = "You need to us
 
 ### sixth instruction
 test_function("tail", incorrect_msg = "Did you extract data using `tail`?")
-test_output_contains("tail(study_data, n = -8L)", incorrect_msg = "You need to assign negative integer to `n`.")
+test_output_contains("tail(study_data, n = -8L)", incorrect_msg = "You need to use `n = -8L`.")
 
 ### seventh instruction
 test_function("head", incorrect_msg = "Did you extract data using `head`?")
-test_output_contains("head(study_data, n = -10L)", incorrect_msg = "You need to assign negative integer to `n`.")
+test_output_contains("head(study_data, n = -10L)", incorrect_msg = "You need to use `n = -10L`.")
 
 ### eighth instruction
-test_function("summary", incorrect_msg = "Did you check data using `summary`?")
+test_function("nrow", incorrect_msg = "Did you count the number of rows using `nrow`?")
 
 ### ninth instruction
+test_function("ncol", incorrect_msg = "Did you count the number of columns using `ncol`?")
+
+### tenth instruction
+test_function("summary", incorrect_msg = "Did you check data using `summary`?")
+
+### eleventh instruction
 test_function("class", incorrect_msg = "Did you check data class using `class`?")
 
 test_error()
