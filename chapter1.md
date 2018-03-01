@@ -592,6 +592,7 @@ study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
 ### Delete Exercise column in study_dataSubset and print out the updated data.
 
 
+
 ### Add an entire row to study_dataSubset, and rename the updated data frame to study_dataSubset2. Print the updated data frame.
 study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
 
@@ -616,8 +617,16 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 `@sct`
 ```{r}
 ### first instruction
-test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset !!")
+test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset$Age !!")
+#test_output_contains("study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)", incorrect_msg = "You need to use the function `c`.")
 
+### second instruction
+test_object("study_dataSubset", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset$Exercise !!")
+#test_output_contains("study_dataSubset$Exercise <- NULL", incorrect_msg = "You need to give study_dataSubset$Exercise `NULL` value.")
+
+### third instruction
+test_object("study_dataSubset2", incorrect_msg = "You need to use <- to assign correct values to the object study_dataSubset2 !!")
+#test_output_contains("study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))", incorrect_msg = "You need to use the function `rbind`.")
 ```
 
 
