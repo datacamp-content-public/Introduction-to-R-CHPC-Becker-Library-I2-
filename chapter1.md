@@ -616,13 +616,13 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 `@sct`
 ```{r}
 ### first instruction
-test_object("study_dataSubset$Age", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
+#test_object("study_dataSubset$Age", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
 
 ### second instruction
 test_object("study_dataSubset$Exercise", incorrect_msg = "You need to assign correct value to the object study_dataSubset$Exercise !!")
 
 ### third instruction
-test_object("study_dataSubset2", incorrect_msg = "You need to assign correct value to the object study_dataSubset2 !!")
+#test_object("study_dataSubset2", incorrect_msg = "You need to assign correct value to the object study_dataSubset2 !!")
 ```
 
 
