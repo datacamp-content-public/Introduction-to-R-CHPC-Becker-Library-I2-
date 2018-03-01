@@ -396,6 +396,12 @@ test_output_contains("tail(study_data, n = -8L)", incorrect_msg = "You need to a
 test_function("head", incorrect_msg = "Did you extract data using `head`?")
 test_output_contains("head(study_data, n = -10L)", incorrect_msg = "You need to assign negative integer to `n`.")
 
+### eighth instruction
+test_function("summary", incorrect_msg = "Did you check data using `summary`?")
+
+### ninth instruction
+test_function("class", incorrect_msg = "Did you check data class using `class`?")
+
 test_error()
 success_msg("Excellent job! You've learned some very important and useful functions in this course.")
 ```
