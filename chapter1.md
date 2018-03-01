@@ -495,6 +495,8 @@ study_data <- read.csv(url("https://assets.datacamp.com/production/course_7304/d
 
 
 ### Select rows 1 to 10 and columns 1 to 5, and assign this selection to an object named study_dataSubset.
+
+
 ```
 `@solution`
 ```{r}
@@ -587,7 +589,7 @@ study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
 ### Print out study_dataSubset.
 
 
-### Delete Age column in study_dataSubset and print out the updated data.
+### Delete Exercise column in study_dataSubset and print out the updated data.
 
 
 ### Add an entire row to study_dataSubset, and rename the updated data frame to study_dataSubset2. Print the updated data frame.
@@ -600,14 +602,31 @@ write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 `@solution`
 ```{r}
 study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)
+
 study_dataSubset
+
 study_dataSubset$Exercise <- NULL
 study_dataSubset
+
 study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))
 study_dataSubset2
+
 write.csv(study_dataSubset2, file = "study_dataSubset2.csv")
 ```
+`@sct`
+```{r}
+### first instruction
+test_student_typed("study_dataSubset$Age <- c(35, 40, 42, 47, 50, 33, 38, 56, 60, 74)", not_typed_msg = "You need to assign correct value to the object study_dataSubset$Age !!")
 
+### second instruction
+test_student_typed("study_dataSubset$Exercise <- NULL", not_typed_msg = "You need to assign correct value to the object study_dataSubset$Exercise !!")
+
+### third instruction
+test_student_typed("study_dataSubset2 <- rbind(study_dataSubset, c("K", 61, 185, 26, 40))", not_typed_msg = "You need to assign correct value to the object study_dataSubset2 !!")
+
+### fourth instruction
+test_student_typed("write.csv(study_dataSubset2, file = "study_dataSubset2.csv")", not_typed_msg = "You need to check the syntax of the function write.csv !!")
+```
 
 
 
